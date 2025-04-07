@@ -79,10 +79,10 @@ if uploaded_file:
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("### 🖼️ Original Image")
-        st.image(np.array(Image.open(uploaded_file)), use_column_width=True)
+        st.image(np.array(Image.open(uploaded_file)), use_container_width=True)
     with col2:
         st.markdown("### 🎯 Processed Image")
-        st.image(display_image, use_column_width=True, clamp=True)
+        st.image(display_image, use_container_width=True, clamp=True)
 
 
 else:
